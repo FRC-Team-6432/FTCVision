@@ -116,7 +116,7 @@ public class FollowCameraNew extends LinearOpMode {
         this.visionPortal = new VisionPortal.Builder()
                 .setCamera(hardwareMap.get(WebcamName.class, "Webcam 1"))
                 .setStreamFormat(VisionPortal.StreamFormat.MJPEG)
-                .setCameraResolution(new Size(800, 600))
+                .setCameraResolution(new Size(1280, 800))
                 .enableLiveView(true)
                 .addProcessor(this.aprilTagProcessor)
                 .build();
